@@ -1,0 +1,19 @@
+REMARK FOR GROMPP
+ATOM      1 N1   tma     1      -0.000   0.000  -0.000  1.00  0.00      XXXX
+ATOM      2 C2   tma     1       0.748  -1.069  -0.760  1.00  0.00      XXXX
+ATOM      3 C3   tma     1      -0.993  -0.648   0.934  1.00  0.00      XXXX
+ATOM      4 C4   tma     1       0.978   0.827   0.800  1.00  0.00      XXXX
+ATOM      5 C5   tma     1      -0.733   0.890  -0.974  1.00  0.00      XXXX
+ATOM      6 H6   tma     1       1.459  -0.605  -1.428  1.00  0.00      XXXX
+ATOM      7 H7   tma     1       1.273  -1.706  -0.062  1.00  0.00      XXXX
+ATOM      8 H8   tma     1       0.048  -1.661  -1.332  1.00  0.00      XXXX
+ATOM      9 H9   tma     1      -1.528   0.117   1.478  1.00  0.00      XXXX
+ATOM     10 H10  tma     1      -0.468  -1.285   1.632  1.00  0.00      XXXX
+ATOM     11 H11  tma     1      -1.693  -1.240   0.362  1.00  0.00      XXXX
+ATOM     12 H12  tma     1       0.442   1.592   1.343  1.00  0.00      XXXX
+ATOM     13 H13  tma     1       1.688   1.291   0.131  1.00  0.00      XXXX
+ATOM     14 H14  tma     1       1.502   0.190   1.497  1.00  0.00      XXXX
+ATOM     15 H15  tma     1      -0.022   1.354  -1.643  1.00  0.00      XXXX
+ATOM     16 H16  tma     1      -1.268   1.655  -0.431  1.00  0.00      XXXX
+ATOM     17 H17  tma     1      -1.433   0.298  -1.547  1.00  0.00      XXXX
+END

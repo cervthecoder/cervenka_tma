@@ -1,0 +1,40 @@
+; Toplogy by Matěj Červenka 
+; Include forcefield parameters
+
+#include "prosecco75.ff/forcefield.itp"
+#include "prosecco75.ff/iontypes.itp"
+; Include TMA specific parameters
+# include "tma.itp"
+; Include phenol specific parameters
+# include "ph.itp"
+
+; Include Position restraint file
+#ifdef POSRES
+#include "posre.itp"
+#endif
+
+; Include water topology
+#include "prosecco75.ff/tip3p.itp"
+;Include ions topology
+#include "prosecco75.ff/ions.itp"
+
+
+
+
+#ifdef POSRES_WATER
+; Position restraint for each water oxygen
+[ position_restraints ]
+;  i funct       fcx        fcy        fcz
+   1    1       1000       1000       1000
+#endif
+
+[ system ]
+; Name
+   TMACl and phenol in water tip3p prosecco75  
+
+[ molecules ]
+; Compound        #mols
+TMA           40
+CL_2S         40
+PH           40
+SOL           1110
