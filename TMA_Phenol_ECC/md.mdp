@@ -1,4 +1,4 @@
-;; prosECCo75 v20210916
+;; CERVENKA_TMA
 integrator              = md
 dt                      = 0.002
 nsteps                  = 100000000
@@ -21,7 +21,7 @@ rvdw_switch             = 1.0
 rvdw                    = 1.2
 ;
 tcoupl                  = V-rescale
-tc_grps			= SYSTEM
+tc_grps			        = SYSTEM
 tau_t                   = 1.0
 ref_t                   = 298.15
 ;
@@ -37,6 +37,7 @@ continuation            = yes
 ;
 nstcomm                 = 100
 comm_mode               = linear
-comm_grps		= SYSTEM
+comm_grps		        = SYSTEM
 ;
 refcoord_scaling        = com
+

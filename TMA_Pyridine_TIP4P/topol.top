@@ -1,0 +1,41 @@
+; Topology generated using molcal v1.0  
+; For use with CGenFF force-field version 4.6
+;
+; Include forcefield parameters
+#include "./charmm36.ff/forcefield.itp"
+;
+; Include ligand specific parameters
+# include "./charmm36.ff/py__ffbonded.itp"
+; Include TMA specific parameters
+# include "tma.itp"
+; Include pyridine specific parameters
+# include "py.itp"
+
+; Include Position restraint file
+#ifdef POSRES
+#include "posre.itp"
+#endif
+
+; Include water topology
+#include "./charmm36.ff/tip4p.itp"
+
+#ifdef POSRES_WATER
+; Position restraint for each water oxygen
+[ position_restraints ]
+;  i funct       fcx        fcy        fcz
+   1    1       1000       1000       1000
+#endif
+
+; Include topology for ions
+#include "./charmm36.ff/ions.itp"
+
+[ system ]
+; Name
+   TMA and pyridine in water tip4p charmm36  
+
+[ molecules ]
+; Compound        #mols
+TMA           40
+CL            40
+PY            40
+SOL           1110

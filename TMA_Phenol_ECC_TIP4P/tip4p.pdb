@@ -1,0 +1,13 @@
+HEADER    
+TITLE     MDANALYSIS FRAME 0: Created by PDBWriter
+HETATM   1   OW  SOL X   1    -0.0110 -0.0050 -0.0650 1.00  0.00            O    
+HETATM   2  HW1  SOL X   1    -0.6110  0.3100  0.6190 1.00  0.00            H    
+HETATM   3  HW2  SOL X   1     0.7790 -0.2370  0.4070 1.00  0.00            H    
+HETATM   4   MW  SOL X   1     0.0100  0.0070  0.0750 1.00  0.00            X    
+CONECT    1    2    3    4
+CONECT    2    1
+CONECT    3    1
+CONECT    4    1
+MASTER        0    0    4    0    0    0    0    0    4    0    4    0
+END
+

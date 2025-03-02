@@ -1,0 +1,40 @@
+; Run parameters
+integrator  = md ; leap-frog integrator
+nsteps  = 450000 ; 2 * 50000 = 100ps
+dt      = 0.002; 2 fs timestep
+; Output control
+nstxout     = 500 ; save coordinates every 1 ps (every 500 timesteps)
+nstvout     = 500 ; save velocities every 1 ps
+nstenergy   = 500 ; save energies every 1 ps
+nstlog      = 500 ; update log file every 1 ps
+; Bond parameters
+continuation  = no ; first dynamic run (we do not need to restart)
+constraint_algorithm = lincs ; holomonic constraints
+constraints   = h-bonds ; bonds involving H are constrainted
+lincs_iter    = 1 ; accuracy of LINCS
+lincs_order   = 4 ; also related to accuracy
+; Nonbonded parameters
+cutoff-scheme = Verlet ; buffered neighbor searching
+ns_type     = grid ; search neighboring grids
+nstlist     = 10 ; 20fs, largely irrelevenat with Verlet
+rcoulomb    = 1.2 ; short range coulomb
+rvdw        = 1.2 ; short range van der Waals
+DispCorr        = EnerPres ; account for cut-off
+; Electrostatics
+coulombtype     = PME ; Particle Mesh Ewald for long range
+pme_order       = 4 ; B-splines cubic intepolation
+fourierspacing      = 0.16 ; grid spacing for FFT
+; Temperature coupling
+tcoupl      = V-rescale ; modified Berendsen thermostat
+tc_grps     = system ; coupling group
+tau_t       = 0.1 ; time constant, in ps (how often you couple the temperature)
+ref_t       = 298.0 ; reference temperature, in kelvin
+; Pressure coupling
+pcoupl      = no ; no pressure coupling
+; PBC
+pbc     = xyz
+; Velocity generation
+gen_vel     = yes
+gen_temp    = 298.0
+gen_seed    = -1
+

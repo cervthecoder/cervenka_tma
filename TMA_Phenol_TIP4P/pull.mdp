@@ -1,0 +1,18 @@
+; Pull code
+pull                    = yes
+pull_ncoords           = 1         ; One reaction coordinate
+pull_ngroups           = 2         ; Two groups involved
+pull_group1_name       = tma      ; First group (adjust name based on your index)
+pull_group2_name       = ph_    ; Second group (adjust name based on your index)
+pull_coord1_type       = umbrella  ; Umbrella pulling
+pull_coord1_geometry   = distance  ; Simple distance-based pulling
+pull_coord1_dim       = Y Y Y      ; Pull in all dimensions
+pull_coord1_groups    = 1 2        ; Groups 1 and 2
+pull_coord1_start     = yes        ; Define initial COM distance
+pull_coord1_rate      = 0.01       ; Pull rate (nm/ps)
+pull_coord1_k         = 1000       ; Spring constant (kJ/mol/nm^2)
+
+; Regular MD parameters
+integrator            = md
+dt                    = 0.002
+nsteps                = 500000     ; Adjust based on needed pulling distance
