@@ -14,7 +14,7 @@ plt.rcParams['text.usetex'] = True
 
 # Load the data from the ODS file
 file_path = 'neutron_scattering_py.ods'
-sheet_name = 'Sheet2'
+sheet_name = 'q-space'
 
 data = pd.read_excel(file_path, engine='odf', sheet_name=sheet_name)
 
@@ -22,7 +22,7 @@ data = pd.read_excel(file_path, engine='odf', sheet_name=sheet_name)
 Q = pd.to_numeric(data.iloc[:, 0], errors='coerce')  # First column for Q
 charmm = pd.to_numeric(data.iloc[:, 1], errors='coerce')  # Second column for CHARMM
 prosecco = pd.to_numeric(data.iloc[:, 2], errors='coerce')  # Third column for ProseCCo
-experiment = pd.to_numeric(data.iloc[:, 3], errors='coerce')  # Fourth column for Experimental data
+experiment = pd.to_numeric(data.iloc[:, 5], errors='coerce')  # Fourth column for Experimental data
 
 # Drop rows with NaN values
 valid_data = pd.DataFrame({'Q': Q, 'charmm': charmm, 'prosecco': prosecco, 'experiment': experiment}).dropna()
