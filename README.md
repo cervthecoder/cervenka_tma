@@ -1,6 +1,6 @@
 # cervenka_tma 
 
-This repository contains input files for molecular dynamics (MD) simulations of tetramethylammonium chloride (TMACl) interacting with pyridine or phenol in aqueous solution. The simulations are performed using either the CHARMM36 force field or the ProsECCo75 force field (which incorporates an ECC scaling factor to account for electronic polarization effects). Additionally, this repository includes **neutron scattering data analysis** for comparing the MD results with experimental data.
+This repository contains input files for molecular dynamics (MD) simulations of tetramethylammonium chloride (TMACl) interacting with pyridine or phenol in aqueous solution. The simulations are performed using either the CHARMM36 force field or the ProsECCo75 force field (which incorporates an ECC scaling factor to account for electronic polarization effects in charged moieties). Additionally, this repository includes **neutron scattering data analysis** for comparing the MD results with experimental data.
 
 ## Repository Structure
 
